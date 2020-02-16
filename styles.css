@@ -51,32 +51,33 @@ table {
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
+    color: #4b4a50;
 }
 
 /* Top Content */
-
-.top-content {
-    max-width: 500px;
-    margin: 30px auto 0;
-    text-align: center;
-    color: #4c4e61;
+h1 {
+    margin-top: 4.333rem;
 }
 
-.top-content h1, h2 {
-    padding: 0 0 10px;
-    font-size: 2rem;
+h1, h2 {
+    padding: 0 0 .667rem;
+    font-size: 2.35rem;
+    text-align: center;
 } 
 
-.top-content h2 {
+h2 {
     font-weight: 600;
 }
 
-.top-content h5 {
-    padding-top: 10px;
+.top-description {
+    width: 35%;
+    margin: 0 auto;
+    padding-top: .667rem;
     font-size: 1.05rem;
     font-weight: 400;
     line-height: 1.5;
+    text-align: center;
     color: #a3a5ae;
 }
 
@@ -92,42 +93,41 @@ body {
 
 .section {
     position: relative;
-    width: 340px;
-    height: 220px;
-    border-radius: 5px;
-    box-shadow: 0px 5px 13px 1px rgba(0,0,0,0.1);
+    width: 22.667rem;
+    height: 15.333rem;
+    border-radius: .333rem;
+    box-shadow: 0px .333rem 13px 1px rgba(0,0,0,0.1);
 }
 
 .center {
-    margin: 30px 30px;
+    margin: 4.333rem 1.867rem;
 }
 
 .one {
-    border-top: 5px solid #45d3d3;
+    border-top: .333rem solid #45d3d3;
 }
 
 .two {
-    margin-bottom: 30px;
-    border-top: 5px solid #ea5353;
+    margin-bottom: 2rem;
+    border-top: .333rem solid #ea5353;
 }
 
 .three {
-    border-top: 5px solid #fcaf4a;
+    border-top: .333rem solid #fcaf4a;
 }
 
 .four {
-    border-top: 5px solid #549ef2;
+    border-top: .333rem solid #549ef2;
 }
 
-.section h4 {
-    padding: 30px 0 15px 30px;
-    font-size: 1.5rem;
+.section-title {
+    padding: 2rem 0 1rem 2.133rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    color: #4b4a50;
 }
 
-.section p {
-    padding: 0 30px;
+.section-description {
+    padding: 0 2rem;
     font-weight: 400;
     line-height: 1.5;
     color: #a3a5ae;
@@ -135,31 +135,89 @@ body {
 
 img {
     position: absolute;
-    right: 30px;
-    bottom: 30px;
+    right: 2rem;
+    bottom: 2rem;
 }
 
-footer p {
+.attribution {
     text-align: center;
+    padding-bottom: 1.333rem;
 }
+
+footer a {
+    text-decoration: none;
+    color: #45d3d3;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .sections {
+        flex-wrap: wrap;
+        margin-top: 4.333rem;
+        justify-content: space-evenly;
+    }
+
+    .top-description {
+        width: 60%;
+        padding: .667rem 0;
+        font-size: 1.067rem;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: row;
+        order: 2;
+    }
+
+    .two {
+        margin-right: 2.733rem;
+    }
+}
+
+@media screen and (max-width: 96.333rem) {
+    .center {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .center {
+        margin: 0;
+    }
+
+    .section h4 {
+        font-size: 1.3rem;
+    }
+
+    .one, .four {
+        margin-bottom: 1rem;
+    }
+
+    .two {
+        margin: 0 2rem;
+    }
+
+    .three {
+        margin: 1rem 2rem;
+    }
+}
+
 
 /* Mobile */
 
 @media screen and (max-width: 376px) {
-    .top-content {
-        max-width: 80%;
-        margin: 55px auto 0;
-        text-align: center;
+    h1 {
+        margin-top: 5.333rem;
     }
 
-    .top-content h1, h2 {
-        font-size: 25px;
-        padding: 5px 0;
+    h1, h2 {
+        font-size: 1.667rem;
+        padding: .333rem 0;
     }
 
-    .top-content h5 {
-        padding: 10px 0;
-        font-size: 16px;
+    .top-description {
+        width: 80%;
+        padding: .667rem 0;
+        font-size: 1.067rem;
     }
 
     .sections {
@@ -167,7 +225,7 @@ footer p {
         flex-direction: column;
         align-items: center;
         width: 95%;
-        margin-top: 40px;
+        margin-top: 4.333rem;
     }
 
     .center {
@@ -185,21 +243,21 @@ footer p {
     }
 
     .two {
-        margin: 15px 30px;
+        margin: 1rem 2rem;
     }
 
     .three {
-        margin: 20px 30px;
+        margin: 1.333rem 2rem;
     }
 
     img {
-        width: 50px;
-        bottom: 25px;
-        right: 25px;
+        width: 3.333rem;
+        bottom: 1.667rem;
+        right: 1.667rem;
     }
 
     footer p {
-        padding: 20px 0;
-        font-size: 14px;
+        padding: 1.333rem 0;
+        font-size: .933rem;
     }
 } 
